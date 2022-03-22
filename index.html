@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change the Background Color Dynamically with JavaScript</title>
+	<script>
+		// Function to change webpage background color
+		function changeBodyBg(color){
+			document.body.style.background = color;
+		}
+		
+		// Function to change heading background color
+		function changeHeadingBg(color){
+			document.getElementById("heading").style.background = color;
+		}
+	</script>
+</head>
+<body>
+    <h1 id="heading">Sundar Pichai</h1>
+    <p><b>Pichai Sundararajan </b>(born June 10, 1972[1][4][5]), better known as<b> Sundar Pichai</b> (/ˈsʊndɑːr pɪˈtʃaɪ/), is an Indian-born American business executive.[6] He is the chief executive officer (CEO) of Alphabet Inc. and its subsidiary Google.
+
+	Born in Madurai, India,[4] Pichai earned his degree from IIT Kharagpur in metallurgical engineering. Moving to the United States, he attained an M.S. from Stanford University in materials science and engineering and further attained an MBA from the Wharton School of the University of Pennsylvania, where he was named a Siebel Scholar and a Palmer Scholar, respectively.[7] .</p>
+    <hr>
+    <div>
+        <label>Change Webpage Background To:</label>
+        <button type="button" onclick="changeBodyBg('#ffff00 ');">#ffff00 </button>
+        <button type="button" onclick="changeBodyBg('#008000  ');">#008000  </button>
+        <button type="button" onclick="changeBodyBg('orange');">Orange</button>
+    </div>
+    <br>
+    <div>
+        <label>Change Heading Background To:</label>
+        <button type="button" onclick="changeHeadingBg('rgb(255, 0, 0)');">rgb(255, 0, 0)</button>
+        <button type="button" onclick="changeHeadingBg('green');">Green</button>
+        <button type="button" onclick="changeHeadingBg('#ee82ee ');">#ee82ee </button>
+    </div>
+</body>
+</html>
